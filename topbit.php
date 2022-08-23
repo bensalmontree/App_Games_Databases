@@ -8,7 +8,7 @@
     include("config.php");
 
     // Connect to databases...
-    $dbconnect=mysqli_connect(localhost,_samountryb9249,rjhI4Q8xESV6ZO24,DB_NAME);
+    $dbconnect=mysqli_connect(DB_NAME,DB_USERNAME,DB_PASSWORD,DB_HOST);
 
     if(mysqli_connect_errno()) {
         echo "Connection failed:".mysqli_connect_error();
